@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Album Profile</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link rel="stylesheet" href="CSS/item-profile.css">
+    <link rel="stylesheet" href="css/scroll.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+    <style>
+        body{
+            background-color: #363062;
+            overflow-x: hidden;
+        }
+        .center-iframe {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            padding-top: 20px; 
+        }
+        .center-iframe iframe {
+            width: 1300px; 
+            height: 770px; 
+            border: none;
+            border-radius: 5px;
+            box-shadow: 0px 0px 105px 10px rgba(0,0,0,0.15);
+            background-color: #435585;
+        }
+        h1, h2, p{
+            color: antiquewhite;
+        }
+        .responsive-video {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 60px; overflow: hidden;
+        }
+        
+        .responsive-video iframe,
+        .responsive-video object,
+        .responsive-video embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .breadcrumb > .home:hover{
+            color: #2e282a;
+        }
+        .breadcrumb > .active {
+            color: #fff;
+            opacity: 50%;
+        }
+        .breadcrumb > .active {
+            color: #928f8f;
+            opacity: 50%;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-2 sticky-top">
+            <div class="container-fluid">
+                <a id="Title" class="lead navbar-brand animate__animated animate__backInLeft" href="#">Rent a Romance</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div style="--bs-breadcrumb-divider: '/';" aria-label="breadcrumb" >
+                    <ol class="breadcrumb mt-3">
+                        <li class="breadcrumb-item home"><a href="home-page.html"> Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page"> Profile</li>
+                    </ol>
+                </div>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 animate__animated animate__fadeInDown" aria-current="page" href="home-page.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 animate__animated animate__fadeInDown" href="our team.html" target="_self">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-2 animate__animated animate__fadeInDown" href="login.html" target="_self">Login/Daftar</a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="dropdown dropstart ">
+                            <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-list" style="color: #fff;"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-dark animate__animated animate__fadeInDown">
+                                <li><a class="dropdown-item" href="Profile.html"><i class="pe-2 bi bi-person-circle"></i>Profile</a></li>
+                                <li><a class="dropdown-item" href="chat.html"><i class="pe-2 bi bi-chat-left-dots"></i>Chatting</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="my-5 jumbotron text-start row text-center">
+            <div>
+                <img style="border-radius: 7px;" class="col" src="https://placehold.co/100x100" alt="">
+            </div>
+            <div>
+                <h1 class="col jumbotron-heading">Welcome to [name] photo album</h1>
+                <p class="lead">In here, you can see all [name] photo album. if you have anything to ask, just chat [name]!</p>
+            </div>
+        </section>
+        <hr>
+        <!-- Gallery Section -->
+        <h2 class="text-center display-4">My Gallery</h2><br>
+        
+        <div class="resposive-video center-iframe">
+            <iframe class="animate__animated animate__fadeInUp" name="iframe_a" src="album.html" >
+                Sorry your browser does not support inline frames.
+            </iframe>
+        </div>
+        
+        <!-- About Section -->
+        <div class="mt-5 container">
+            <h2 class="lead display-5">Disclaimer</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tincidunt condimentum lectus, a pretium magna molestie eget. Quisque auctor lacus id purus pulvinar, nec dignissim lacus tristique. Quisque ut risus lacinia, feugiat libero nec, varius metus. Nullam vulputate massa a ligula consectetur, sed elementum mi tristique. Pellentesque sed leo eget sapien congue facilisis.</p>
+        </div>
+    </main>
+
+    <footer>
+        <!-- Footer Content -->
+        <footer class="footer bg-light">
+            <div class="container">
+                <p class="text-muted text-center">&copy; 2021 My Photo Website</p>
+            </div>
+        </footer>
+    </footer>
+</body>
+</html>
